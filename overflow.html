@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>溢出</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 30px;
+            background-color: red;
+            line-height: 30px;
+            /* overflow: scroll; 
+            滚动条
+            */
+            /* overflow: auto; */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 不换行显示 
+            强制显示在一行
+
+            */
+            white-space: nowrap;
+
+        }
+
+        #div2 {
+            background: #5ae4af;
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+
+        }
+    </style>
+    <!-- 文本溢出..
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    -->
+</head>
+
+<body>
+    <div id="div1">
+        哈哈哈哈 哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+
+    </div>
+    <div id="div2">
+        哈哈哈哈asdfasd 哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+
+    </div>
+</body>
+
+</html>
