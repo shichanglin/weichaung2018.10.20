@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="test.css"> -->
+    <style>
+        #aa {
+            background: pink;
+        }
+
+        .bb {
+            background: green;
+        }
+
+        li {
+            color: firebrick;
+            list-style: none;
+            background: purple;
+        }
+
+        /* #cc li {
+
+
+        } */
+        #cc>li {
+
+            background: yellow
+        }
+
+        /* 分组选择器 */
+
+        #aa,
+        .bb {
+            color: orange;
+        }
+
+        a:hover {
+            color: blue;
+
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        #dd {
+            height: 500px;
+            /* background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-position: 100px 200px; */
+            background: url(aaa.jpg) no-repeat 100px 200px;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aa">
+        asdfasdfasdf
+    </div>
+
+    <ul>
+        <li class="bb">111</li>
+        <li>222</li>
+        <li class="bb">333</li>
+    </ul>
+    <ul class="cc">
+        <li>
+            11111
+            <ul>
+                <li>a</li>
+                <li>b</li>
+            </ul>
+        </li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+
+    <a href="#">asdfasdf</a>
+
+    <diV id="dd">asdfasdfasdf</diV>
+
+</body>
+
+</html>
