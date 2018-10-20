@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动</title>
+
+    <style>
+        #div1 {
+            width: 150px;
+            height: 50px;
+            background: red;
+            float: left;
+
+        }
+
+        #div2 {
+            width: 150px;
+            height: 50px;
+            background: blue;
+            float: left;
+            /* 半脱离文档 */
+
+        }
+
+
+        #div0 {
+            /*   
+    overflow:hidden; */
+            /* height: 50px; */
+
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #div3 {
+
+            clear: both;
+            /* 左右浮动都好使 */
+        }
+    </style>
+
+    <!-- float：left right
+    浮动的元素会脱离文档流 释放空间
+    浮动带来的塌陷问题 如何解决 ?
+    解决塌陷：1 overflow:hidden;父元素加入 谁没有高谁加
+             2 手动设置父元素的高
+             3 浮动元素下边加入一个兄弟元素  clear：both;
+             4 clearfix::after 伪元素 块级 clear：both
+  
+
+    -->
+</head>
+
+<body>
+    <div id="div0" class="clearfix">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <!-- <div id="div3">3</div> -->
+    </div>
+
+    <h1>klasjdfshdkfjsh;dfksh;djfhg;h</h1>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>
